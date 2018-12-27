@@ -1,0 +1,7 @@
+<?php 
+include("http://compsci.asmsa.org/townss15/Includes/Header.txt") 
+?>
+
+<?php 
+    include("http://compsci.asmsa.org/townss15/Includes/Footer.php") 
+?>

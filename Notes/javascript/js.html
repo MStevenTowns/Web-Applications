@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <script>
+        function avoid(elem)
+        {
+            var e=window.event;
+            var posX=e.clientX;
+            var posY=e.clientY;
+            rect=elem.getBoundingClientRect()
+            if(posX<(rect.left+rect.right)/2)elem.style.left=10+elem.getBoundingClientRect().left;
+            else elem.style.left=-10+elem.getBoundingClientRect().left;
+            
+            if(posY<(rect.top+rect.bottom)/2)elem.style.top=-10+elem.getBoundingClientRect().top;
+            else elem.style.top=+10+elem.getBoundingClientRect().top;
+            //console.log("test");
+            
+            
+        }
+        function explode(elem)
+        {
+            text=elem.innerHTML;
+        }        
+        //alert("asdf");
+        /*function unavoid(elem)
+        {
+            elem.style.fontSize="10px";
+        }
+        //alert("asdf");*/
+        
+        </script>
+    </head>
+    <body >
+    <div style="position:absolute;" onmousemove="avoid(this)" >
+        crap
+    </div>
+    </body>
+</html>

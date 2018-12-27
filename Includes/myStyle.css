@@ -1,0 +1,22 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#main-wrapper {
+    box-sizing: border-box;
+    min-height: 90%;
+    padding: 0 0 10px;
+    position: relative;
+}
+
+footer {
+    bottom: 0;
+    height: -1px;
+    margin-left: auto;
+    margin-right: auto;
+    position: fixed;
+    width: 100%;
+}
